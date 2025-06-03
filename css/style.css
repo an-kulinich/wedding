@@ -2,13 +2,14 @@
     width: 100%;
     margin: 0 auto;
     align-content: center;
-    background-color: aquamarine;
+    background-color: #e3e3e3;
     box-sizing: border-box;
  }
 
  .content_wrapper {
-    width: 1200px;
-    background-color: rgb(138, 159, 255);
+   width: 100%;
+    max-width: 1200px;
+    /* background-color: rgb(138, 159, 255); */
     padding: 10px;
     display: flex;
     flex-direction: column;

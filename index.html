@@ -7,7 +7,7 @@
     <title>Андрей+Настя</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Marck+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -40,7 +40,7 @@
         }
 
         h1 {
-            font-family: 'Great Vibes', sans-serif;
+            font-family: 'Marck Script', sans-serif;
             font-size: 84px;
             font-weight: 200;
         }
@@ -77,6 +77,20 @@
             font-family: 'Great Vibes', sans-serif;
             font-size: 52px;
             font-weight: 200;
+            text-align: center;
+        }
+
+        .text {
+            font-family: 'Belota Text', sans-serif;
+            font-size: 20px;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        .date_text {
+            font-family: 'Great Vibes', sans-serif;
+            font-size: 32px;
+            font-weight: 200;
         }
     </style>
 
@@ -93,7 +107,7 @@
             <p class="text">
                 И вот уже совсем скоро состоится самое важное событие в нашей жизни - мы станем одной семьей!
             </p>
-            <span>12 сентября 2025г.</span>
+            <span class="date_text">12 сентября 2025г.</span>
             <div class="calendar_wrapper">
                 <!-- <img src="./img/calendar1.jpg" alt="calendar"> -->
             </div>
@@ -103,23 +117,40 @@
 
     <section class="title_block">
 
+        <style>
+            .item_block {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 350px;
+                padding: 15px 0px;
+            }
+            .timer_text {
+                font-family: 'Belota Text', sans-serif;
+                font-size: 18px;
+                font-weight: 100;
+                text-align: center;
+                padding: 0px 20px;
+            }
+        </style>
+
         <div class="content_wrapper">
             <h2>Программа дня</h2>
             <div class="item_block">
-                <img src="" alt="Иконка">
-                <span class="timer_text">Сбор гостей</span>
+                <img src="./img/tolpa.png" width="35px" alt="Иконка">
+                <span class="timer_text">15:30 > Сбор гостей</span>
             </div>
             <div class="item_block">
-                <img src="" alt="Иконка">
-                <span class="timer_text">Выездная регистрация</span>
+                <img src="./img/kolco.png" width="35px" alt="Иконка">
+                <span class="timer_text">16:00 > Выездная регистрация</span>
             </div>
             <div class="item_block">
-                <img src="" alt="Иконка">
-                <span class="timer_text">Праздничный банкет</span>
+                <img src="./img/banket.png" width="35px" alt="Иконка">
+                <span class="timer_text">16:40 > Праздничный банкет</span>
             </div>
             <div class="item_block">
-                <img src="" alt="Иконка">
-                <span class="timer_text">Завершение вечера</span>
+                <img src="./img/final.png" width="35px" alt="Иконка">
+                <span class="timer_text">01:00 > Завершение вечера</span>
             </div>
         </div>
 
@@ -129,8 +160,29 @@
 
         <div class="content_wrapper">
             <h2>Локация</h2>
-            <img src="" alt="Фото усадьбы">
-            <p class="text">Минский р-н, а/г Колодищи, ул. Непомню какая 1</p>
+            <img src="./img/edel-house.webp" width="300px" alt="Фото усадьбы">
+            <p class="text">Минский р-н, а/г Колодищи, ул. Георгиевская 1 <br> Усадьба Edel House</p>
+
+            <style>
+                .button {
+                    background-color: red;
+                    color: white;
+                    border: none;
+                    padding: 15px 30px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: transform 0.3s;
+                    width: 250px;
+                    border-radius: 15px;
+                }
+
+                .button:hover {
+                    transform: scale(1.1);
+                }
+            </style>
+
+            <a href="https://yandex.by/maps/-/CHGjm60W" target="_blank"><button class="button">Yandex-карта</button></a>
+
         </div>
 
     </section>
@@ -142,7 +194,7 @@
             <p class="text">
                 Мы будем рады если вы выберете спокойные тона и бла-бла-бла
             </p>
-            <img src="" alt="картинка с тонами">
+            <img src="./img/dresscode.JPG" width="300px" alt="картинка с тонами">
         </div>
 
     </section>
@@ -165,7 +217,7 @@
             <p class="text">
                 Просьба пройти небольшой опрос нажав на кнопку ниже и подтвердить свое присутствие
             </p>
-            <button><a href="">Пройти опрос</a></button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_ouSn1YL6zrS3QOZfwQ8QoeKZuMQkQr-5NLF6i2EL6zmoA/viewform" target="_blank"><button class="button">Пройти опрос</button></a>
         </div>
 
     </section>
