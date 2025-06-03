@@ -62,9 +62,30 @@
             padding: 20px 20px;
         }
 
+        .main_wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
         @media screen and (max-width: 760px) {
             .photos_block {
                 flex-direction: column;
+            }
+
+            .main_wrapper {
+                flex-direction: column-reverse;
+            }
+
+            h1 {
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+
+            .date_wrapper {
+                flex-direction: column-reverse;
             }
 
         }
@@ -81,17 +102,21 @@
     <section class="title_block">
 
         <div class="content_wrapper">
-            <div class="photos_block">
-                <!-- <div class="photo_wrapper_andrew"> -->
-                <img src="./img/andr3.png" class="photo_a" alt="">
-                <!-- </div> -->
-                <img src="./img/love.png" width="100px" height="100px" alt="" class="love_img">
-                <!-- <div class="photo_wrapper_nasya"> -->
-                <img src="./img/nas3.png" class="photo_n" alt="">
-                <!-- </div> -->
+            <div class="main_wrapper">
+                <div class="photos_block">
+                    <!-- <div class="photo_wrapper_andrew"> -->
+                    <img src="./img/andr3.png" class="photo_a" alt="">
+                    <!-- </div> -->
+                    <img src="./img/love.png" width="100px" height="100px" alt="" class="love_img">
+                    <!-- <div class="photo_wrapper_nasya"> -->
+                    <img src="./img/nas3.png" class="photo_n" alt="">
+                    <!-- </div> -->
+                </div>
+                <div class="date_wrapper">
+                    <h1>Андрей & Анастасия</h1>
+                    <h2>12.09.2025</h2>
+                </div>
             </div>
-            <h1>Андрей & Анастасия</h1>
-            <h2>12.09.2025</h2>
         </div>
 
     </section>
@@ -109,7 +134,7 @@
         h2 {
             font-family: 'Great Vibes', sans-serif;
             font-size: 52px;
-            font-weight: 200;
+            font-weight: 100;
             text-align: center;
         }
 
@@ -118,6 +143,7 @@
             font-size: 20px;
             font-weight: 100;
             text-align: center;
+            color: black;
         }
 
         .date_text {
@@ -215,7 +241,9 @@
         <div class="content_wrapper">
             <h2>Локация</h2>
             <img src="./img/edel-house.webp" width="500px" class="photo_house" alt="Фото усадьбы">
+            <br>
             <p class="text">Минский р-н, а/г Колодищи, ул. Георгиевская 1 <br> Усадьба Edel House</p>
+            <br>
 
             <style>
                 .button {
@@ -249,6 +277,7 @@
                 Для нас главное - ваше присутствие! Но мы будем признательны, если при выборе наряда вы поддержите
                 цветовую гамму нашего праздника:
             </p>
+            <br><br>
             <img src="./img/dresscode.JPG" width="300px" alt="картинка с тонами">
         </div>
 
@@ -272,11 +301,25 @@
             <p class="text">
                 Для наилучшего планирования нашего праздника просим пройти небольшой опрос и подтвердить свое
                 присутствие до 01.07.2025 (предварительный ответ) и до 01.08.2025 (окончательный ответ)
-
-
             </p>
+            <br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_ouSn1YL6zrS3QOZfwQ8QoeKZuMQkQr-5NLF6i2EL6zmoA/viewform"
-                target="_blank"><button class="button">Пройти опрос</button></a>
+                target="_blank">
+                <button class="button">Пройти опрос</button>
+            </a>
+            <br>
+            <p class="text">
+                Любые вопросы вы можете задать нашему организатору Алёне <a href="https://t.me/alenashrimf"
+                    target="_blank">https://t.me/alenashrimf</a>
+            </p>
+
+            <p class="text">
+                Также вступайте в нашу группу в telegram <a href="https://t.me/alenashrimf"
+                    target="_blank">https://t.me/какая-то ссылка на наш ТГ-канал</a>
+            </p>
+            <br>
+            <br>
+            <br>
         </div>
 
     </section>
